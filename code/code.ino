@@ -74,8 +74,7 @@ void loop() {
   // read the pressure
   float pressure = BARO.readPressure();
 
-  // might be able to delete this line by not closing the file in the setup
-  // might not have to close the file at all
+
   data = SD.open("data.csv", FILE_WRITE);
 
   // creates a variable for the time since deployment
@@ -97,7 +96,9 @@ void loop() {
   } 
   else{
     delay(100);
+    Serial.println("Failed to open data.csv");
+
   }
 
-  delay(1);
+  delay(100);
 }
