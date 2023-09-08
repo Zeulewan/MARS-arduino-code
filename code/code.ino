@@ -1,16 +1,3 @@
-/*
-
-  This code reads data from the on-board LPS22HB sensor of the
-  Nano 33 BLE Sense pressure sensor value to the Serial 
-  Monitor and SD card every millisecond
-
-  The circuit:
-  - Arduino Nano 33 BLE Sense
-  - microSD with Level Shifting Connector (Breakout)
-
-  Written by Zeul on september 4th
-*/
-
 // data transfer protocol library
 #include <SPI.h>
 //SD card library
